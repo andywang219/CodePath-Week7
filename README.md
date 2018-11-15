@@ -7,7 +7,7 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
+1. (Required) Vulnerability Name or ID: User Enumeration
   - [ ] Summary: You find out what username exists already.
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
