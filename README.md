@@ -8,7 +8,7 @@ Time spent: **X** hours spent in total
 ## Pentesting Report
 
 1. (Required) Vulnerability Name or ID: User Enumeration
-  - [ ] Summary: You find out what username exists already.
+  - [ ] Summary:
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
     - Fixed in version: 4.6.1
@@ -16,34 +16,40 @@ Time spent: **X** hours spent in total
       <img src='https://github.com/andywang219/CodePath-Week7/blob/master/Challenge1/ue.gif' title='User Enumeration' width='800' alt='UE' />
   - [ ] Steps to recreate: Sign in with username admin, but no password. Then sign in with username admin and a random password. Lastly, sign in with a random username and a random password.
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-2. (Required) Vulnerability Name or ID
+    - [Link 1](https://wordpress.org/plugins/stop-user-enumeration/#description)
+    
+2. (Required) Vulnerability Name or ID: Cross Site Scripting
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.6.1
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+      <img src='https://github.com/andywang219/CodePath-Week7/blob/master/Challenge2/xss.gif' title='XSS' width='800' alt='xss' />
+  - [ ] Steps to recreate: First, create a new post. Second, insert the code: ```<a onmouseover= "alert('Hello')" >Say Hello</a>```. Third, click on "Preview" and as you hover over the text, there'll be a alert.
+  - [ ] Affected source code:
+    - [Link 2](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-includes/class-wp-editor.php?rev=33361)
+    
+3. (Required) Vulnerability Name or ID: Authenticated Stored Cross-Site Scripting via Image Filename
+  - [ ] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: Later Versions
+  - [ ] GIF Walkthrough: 
+       <img src='https://github.com/andywang219/CodePath-Week7/blob/master/Challenge3/mediaXSS.gif' title='FXSS' width='800' alt='fxss' />
+  - [ ] Steps to recreate: First, create a new media page and upload an image from your computer. Second, click on the image and insert the following code into the image's title: ```filename<img src=a onerror=alert(1)>.png```.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-3. (Required) Vulnerability Name or ID
+    
+4. (Optional) Vulnerability Name or ID: Stored XSS through embedded URL
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: Later Version
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+      <img src='https://github.com/andywang219/CodePath-Week7/blob/master/Challenge4/link.gif' title='LXSS' width='800' alt='lxss' />
+  - [ ] Steps to recreate: First, create a new post. Second, insert a malicious link like this one: ```[embed src='https://youtube.com/embed/123\x3csvg onload=alert("Hacked")\x3e'][/embed]```
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-4. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 4](https://blog.sucuri.net/2017/03/stored-xss-in-wordpress-core.html)
 
 ## Assets
 
