@@ -13,7 +13,7 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.6.1
   - [ ] GIF Walkthrough: <br/>
-      <img src='CodePath-Week7/Challenge1/auth.gif' title='User Enumeration' width='70%' alt='UE' />
+      <img src='/CodePath-Week7/Challenge1/auth.gif' title='User Enumeration' width='800' alt='UE' />
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
