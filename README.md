@@ -8,13 +8,13 @@ Time spent: **X** hours spent in total
 ## Pentesting Report
 
 1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
+  - [ ] Summary: You find out what username exists already.
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
     - Fixed in version: 4.6.1
-  - [ ] GIF Walkthrough: <br/>
-      <img src='CodePath-Week7/Challenge1/ue.gif' title='User Enumeration' width='800' alt='UE' />
-  - [ ] Steps to recreate: 
+  - [ ] GIF Walkthrough:
+      <img src='https://github.com/andywang219/CodePath-Week7/blob/master/Challenge1/ue.gif' title='User Enumeration' width='800' alt='UE' />
+  - [ ] Steps to recreate: Sign in with username admin, but no password. Then sign in with username admin and a random password. Lastly, sign in with a random username and a random password.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 2. (Required) Vulnerability Name or ID
