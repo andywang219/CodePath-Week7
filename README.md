@@ -1,7 +1,7 @@
 # CodePath-Week7
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -17,7 +17,7 @@ Time spent: **X** hours spent in total
   - [x] Steps to recreate: Sign in with username admin, but no password. Then sign in with username admin and a random password. Lastly, sign in with a random username and a random password.
   - [x] Affected source code:
     - [Link 1](https://wordpress.org/plugins/stop-user-enumeration/#description)
-    
+    <hr/>
 2. (Required) Vulnerability Name or ID: Cross Site Scripting
   - [x] Summary: 
     - Vulnerability types: XSS
@@ -28,7 +28,7 @@ Time spent: **X** hours spent in total
   - [x] Steps to recreate: First, create a new post. Second, insert the code: ```<a onmouseover= "alert('Hello')" >Say Hello</a>```. Third, click on "Preview" and as you hover over the text, there'll be a alert.
   - [x] Affected source code:
     - [Link 2](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-includes/class-wp-editor.php?rev=33361)
-    
+    <hr/>
 3. (Required) Vulnerability Name or ID: Authenticated Stored Cross-Site Scripting via Image Filename
   - [x] Summary: 
     - Vulnerability types: XSS
@@ -39,7 +39,7 @@ Time spent: **X** hours spent in total
   - [x] Steps to recreate: First, create a new media page and upload an image from your computer. Second, click on the image and insert the following code into the image's title: ```filename<img src=a onerror=alert(1)>.png```.
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-    
+    <hr/>
 4. (Optional) Vulnerability Name or ID: Stored XSS through embedded URL
   - [x] Summary: 
     - Vulnerability types: XSS
