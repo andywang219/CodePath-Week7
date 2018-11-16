@@ -11,7 +11,7 @@ Time spent: **6** hours spent in total
   - [x] Summary:
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
-    - Fixed in version: 4.6.1
+    - Fixed in version: Later Versions
   - [x] GIF Walkthrough:
       <img src='https://github.com/andywang219/CodePath-Week7/blob/master/Challenge1/ue.gif' title='User Enumeration' width='800' alt='UE' />
   - [x] Steps to recreate: Sign in with username admin, but no password. Then sign in with username admin and a random password. Lastly, sign in with a random username and a random password.
@@ -22,7 +22,7 @@ Time spent: **6** hours spent in total
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.2
-    - Fixed in version: 4.6.1
+    - Fixed in version: Later Versions
   - [x] GIF Walkthrough: 
       <img src='https://github.com/andywang219/CodePath-Week7/blob/master/Challenge2/xss.gif' title='XSS' width='800' alt='xss' />
   - [x] Steps to recreate: First, create a new post. Second, insert the code: ```<a onmouseover= "alert('Hello')" >Say Hello</a>```. Third, click on "Preview" and as you hover over the text, there'll be a alert.
