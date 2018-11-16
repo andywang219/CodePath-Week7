@@ -38,7 +38,7 @@ Time spent: **6** hours spent in total
        <img src='https://github.com/andywang219/CodePath-Week7/blob/master/Challenge3/mediaXSS.gif' title='FXSS' width='800' alt='fxss' />
   - [x] Steps to recreate: First, create a new media page and upload an image from your computer. Second, click on the image and insert the following code into the image's title: ```filename<img src=a onerror=alert(1)>.png```.
   - [x] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 3](https://www.securityweek.com/wordpress-flaw-allows-xss-attack-image-filenames)
     <hr/>
 4. (Optional) Vulnerability Name or ID: Stored XSS through embedded URL
   - [x] Summary: 
